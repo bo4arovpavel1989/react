@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import Header from './components/common/Header';
+import './index.css';
 
 const App = ()=>{
-	return <h1>React Coin</h1>
+	const title='React Coin';
+	return (
+	<div>
+		<Header/>
+		<h1>{title}</h1>
+		<p>Up to date crypto currencies financial data</p>
+	</div>	
+	);	
 }
 
 ReactDom.render(
